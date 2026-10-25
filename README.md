@@ -1,2 +1,14 @@
-# challenge-photo-uploader
-Challenge - Photo uploader
+# Challenge - Photo uploader
+
+## Backlog
+
+* add download captured image button
+
+## Links
+
+* https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos
+
+## Errors
+
+* OBS Virtual Camera - NotReadableError: Could not start video source
+* USB Video Device - NotAllowedError: Permission denied by system
