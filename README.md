@@ -8,6 +8,7 @@
 
 * frontend setup on castle (Ansible)
 * backend
+  * store last 10 uploaded picture per user
 * backend setup on castle (Ansible)
 
 ## Links
