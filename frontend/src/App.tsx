@@ -22,6 +22,23 @@ function App() {
 
     }, [webcamRef]);
 
+    const download = useCallback(() => {
+        if(imgSrc == null) {
+            return;
+        }
+
+        const link = document.createElement('a');
+        link.href = imgSrc;
+        link.download = 'webcam-picture.png';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+    }, [imgSrc]);
+
+    const remove = useCallback(() => {
+        setImgSrc(null);
+    }, []);
+
     return (
         <section id="center">
             <Webcam
@@ -36,7 +53,20 @@ function App() {
             <button onClick={capture}>Capture Photo</button>
             <div style={{width: "100%", height: "150px"}}>
                 {imgSrc &&
-                    <img src={imgSrc} alt="img" height={"150px"} style={{border: "solid 1px gray", height: "150px"}}/>}
+                    <>
+                        <div>
+                            <img src={imgSrc} alt="img" height={"150px"}
+                                 style={{border: "solid 1px gray", height: "150px"}}/>
+                        </div>
+                        <div>
+                            <button onClick={() => remove()}>Remove</button>
+                            &nbsp;
+                            <button onClick={() => download()}>Download</button>
+                            &nbsp;
+                            <button>Save</button>
+                        </div>
+                    </>
+                }
             </div>
         </section>
     )

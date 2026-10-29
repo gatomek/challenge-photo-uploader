@@ -1,8 +1,10 @@
 # Challenge - Photo uploader
 
-## Backlog
+## Release Notes
 
-* add download captured image button
+* download captured image button added
+
+## Backlog
 
 ## Links
 
