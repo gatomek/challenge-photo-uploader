@@ -63,7 +63,7 @@ function App() {
                             &nbsp;
                             <button onClick={() => download()}>Download</button>
                             &nbsp;
-                            <button>Save</button>
+                            <button disabled>Save</button>
                         </div>
                     </>
                 }

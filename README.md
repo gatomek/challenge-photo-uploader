@@ -6,6 +6,10 @@
 
 ## Backlog
 
+* frontend setup on castle (Ansible)
+* backend
+* backend setup on castle (Ansible)
+
 ## Links
 
 * https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos
