@@ -1,8 +1,15 @@
 # Challenge - Photo uploader
 
+## Release Notes
+
+* download captured image button added
+
 ## Backlog
 
-* add download captured image button
+* frontend setup on castle (Ansible)
+* backend
+  * store last 10 uploaded picture per user
+* backend setup on castle (Ansible)
 
 ## Links
 
